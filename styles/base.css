@@ -57,11 +57,12 @@ nav a:hover{
 
 /*  MAIN  */
 
-main{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1rem;
-    margin: 1rem;
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin: 1rem auto;
+  max-width: 1200px;
 }
 
 section{
