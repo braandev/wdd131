@@ -1,0 +1,196 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: grid;
+    height: 100dvh;
+    grid-template-rows: auto 1fr auto;
+}
+
+h2,h1{
+    font-family:sans-serif;
+}
+
+p, a{
+    font-family: "Exo 2", sans-serif;
+}
+
+
+/*  HEADER  */
+header{
+    display: inline;
+}
+
+header h1{
+    text-align: center;
+    background-color: #1d4d72;
+    font-size: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    color: whitesmoke;
+}
+.highlight{
+    color: yellow;
+}
+
+header nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #333333;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+header nav a{
+    font-size: 1.3rem;
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+nav a:hover{
+    color: yellow;
+    text-decoration: underline;
+}
+
+/*  MAIN  */
+
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin: 1rem;
+}
+
+section{
+    border: 1.5px solid #bdbdbd;
+}
+
+
+aside{
+    border: 2px solid #bdbdbd;
+}
+
+/*  SECTION CARD  */
+
+
+.card{
+    border-radius: 10px;
+    border-radius: 10px;
+    padding-bottom: 1rem;
+    
+}
+
+.card .title-card{
+    text-align: center;
+    background-color: #1d4d72;
+    border-radius: 10px 10px 0 0;
+    color: whitesmoke;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+.bio-container{
+    display: flex;
+    margin-top: 1rem;
+    margin-right: 2rem;
+    margin-left: 1rem;  
+    display: flex;
+}
+
+.bio-container p{
+    margin-top: 1rem;
+    font-size: 1.1rem;
+    letter-spacing: 3px ;
+    font-family: "Exo 2", sans-serif;
+}
+
+.bio-container img{
+    height: 200px;
+    width: auto;
+    margin-left: 1rem;
+}
+
+/*  SECTION TITLE FLAG  */
+.title-flag{
+    margin-bottom: 1rem;
+    margin-top: 0.5rem;
+    margin-left: 20%;
+    margin-right: 20%;
+    line-height: 1.6;
+    text-align: center;
+    transform: translateX(-25%) translateY(-80%);
+    font-size: 1rem;
+
+}
+
+/*  SECTION CARD FLAG  */
+.flag{
+    margin-left: 1rem;
+    transform: translateY(20%);
+}
+
+.flag p{
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+.flag-container img{
+    height: 100px;
+    width: 170px;
+    
+}
+
+.flag-container{
+    display: flex;
+    transform: translateY(-10%);
+}
+
+.title-devsources{
+    background-color: #1d4d72;
+    border-radius: 10px 10px 0 0 ;
+}
+
+.description-flag{
+    font-size: 1.1rem;
+    letter-spacing: 3px ;
+    font-family: "Exo 2", sans-serif;
+    margin-right: 25%;
+    margin-left: 1rem;
+}
+/*  ASIDE  */
+
+.card-aside{
+    border-radius: 10px;
+}
+
+.card-aside h2{
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    color: whitesmoke;
+}
+
+.list{
+    margin-left: 2rem;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-top: 20%;
+}
+
+
+
+/*  FOOTER  */
+
+footer{
+    text-align: center;
+    color: whitesmoke;
+    background-color: #1d4d72;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+}
+
