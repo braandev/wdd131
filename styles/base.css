@@ -59,7 +59,7 @@ nav a:hover{
 
 main {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 2fr 1fr;
   gap: 1rem;
   margin: 1rem auto;
   max-width: 1200px;
@@ -188,10 +188,18 @@ aside{
 /*  FOOTER  */
 
 footer{
-    text-align: center;
+    display: inline;
     color: whitesmoke;
     background-color: #1d4d72;
     padding-bottom: 1rem;
     padding-top: 1rem;
 }
+
+footer p{
+    display: flex;
+  flex-direction: column; 
+  align-items: center;     
+  text-align: center;
+}
+
 
