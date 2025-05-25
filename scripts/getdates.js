@@ -1,8 +1,8 @@
-// select the DOM elements for output
+
 const full = document.querySelector("#LastModified");
 
 
-// use the date object
+
 const today = new Date();
 const time = new Date();
 
