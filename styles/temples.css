@@ -32,6 +32,10 @@ header h1{
 .button-close{
   display: none;
 }
+
+.button-open{
+  display: none;
+}
 .nav-list{
   display: flex;
   gap: 2rem;
@@ -48,7 +52,7 @@ header h1{
 nav a:hover {
   color: yellow;
   border-radius: 5px;
-  transform: translateX(5px); /* efecto de desplazamiento */
+  transform: translateX(5px); 
 }
 
 
@@ -130,6 +134,9 @@ footer p{
   .button-close{
     display: none;
   }
+  .button-open{
+    display: none;
+  }
 
   .grid{
     display: grid;
@@ -144,7 +151,7 @@ footer p{
     margin-right: 1rem;
   }
 
-  .nav {
+  nav {
     position: absolute;
     top: 0;
     left: 50%;
@@ -155,7 +162,11 @@ footer p{
     flex-direction: column;
     align-items: center;
     width: 100%;
+    transition: all 0.3s ease-in-out;
     
+  }
+  .button-open{
+    display: block;
   }
 
   nav a:hover {
