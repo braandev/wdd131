@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ 
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WDD 131 – Dynamic Web Fundamentals – Brandon Cazorla</title>
+  <meta name="description" content="WDD 131 – Dynamic Web Fundamentals | Brandon Cazorla | Personal home page with about me, course links, and web dev resources using local optimized images." />
+  <meta name="author" content="Brandon Cazorla" />
+
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;600;800&display=swap" rel="stylesheet">
+
+  
+  <link rel="stylesheet" href="styles/base.css">
+</head>
+<body>
+  <header class="site-header">
+    <span id="course-title">WDD 131 – Dynamic Web Fundamentals</span>
+    <nav class="site-nav" aria-label="Primary">
+      <ul>
+        <li><a href="https://www.linkedin.com/in/brandoncazorlacosta/" target="_blank" rel="noopener">LinkedIn</a></li>
+        <li><a href="https://byupw.instructure.com/" target="_blank" rel="noopener">Canvas</a></li>
+        <li><a href="https://www.churchofjesuschrist.org/study/scriptures" target="_blank" rel="noopener">Scripture</a></li>
+        <li><a href="final-project/">Final Project</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Brandon Cazorla</h1>
+
+    <section class="card" id="about">
+      <h2>About Me</h2>
+      <div class="about-grid">
+        <p>
+          My name is Brandon, i am from Argentina, i live with my mom and my three dogs: Rex, Railey and Jack. Currently i am studying Computer Science and the Bachelor of Software Development. I love have differents hobbies like read a books, play the guitar and lear differents things,
+        </p>
+        
+        <img src="images/Brandon Cazorla - Founder (Woof).jpg" width="220" height="220" alt="Photo of Brandon Cazorla" />
+      </div>
+
+      <h3>Copenhague, Denamark</h3>
+      <hr class="divider" />
+      <div class="media-row">
+        <figure>
+          
+          <img src="images/Flag_of_Denmark.svg.webp" width="120" height="80" alt="Official Flag of Madagascar" />
+          <figcaption>Official Flag of Denmark</figcaption>
+        </figure>
+        <p>
+          Denmark is a Nordic country spanning the Jutland Peninsula and 400+ islands; its capital is Copenhagen. It ranks high in quality of life, education, and a strong social welfare system. A leader in renewables—especially wind power—it also excels in design, architecture, and cycling culture. Home of Vikings and LEGO, it blends deep history with innovation and livable, people-centered cities.
+        </p>
+      </div>
+    </section>
+
+    <section class="card" id="resources">
+      <h2>Web Dev Resources</h2>
+      <ul class="link-list">
+        <li><a href="https://dev.to/" target="_blank" rel="noopener">Dev.to Community</a></li>
+        <li><a href="https://www.smashingmagazine.com/" target="_blank" rel="noopener">Smashing Magazine</a></li>
+        <li><a href="https://css-tricks.com/" target="_blank" rel="noopener">CSS-Tricks</a></li>
+        <li><a href="https://www.w3schools.com/" target="_blank" rel="noopener">W3Schools</a></li>
+        <li><a href="https://www.udemy.com/" target="_blank" rel="noopener">Udemy</a></li>
+        <li><a href="https://placehold.co/" target="_blank" rel="noopener">Image Placeholder</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>©<span id="currentyear"></span> Brandon Cazorla • Argentina</p>
+    <p id="lastModified"></p>
+  </footer>
+
+
+  <script src="scripts/getdates.js" defer></script>
+</body>
+</html>
