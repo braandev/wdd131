@@ -1,0 +1,121 @@
+* { margin: 0; padding: 0; }
+.cuerpo { 
+  display: grid; 
+  grid-template-rows: auto 1fr auto; 
+}
+
+
+/*** HEADER ***/
+header{
+  background-color: purple;
+  display:flex; 
+  align-items:center; 
+  justify-content:space-between;
+  padding:1rem 0;
+}
+nav ul{
+  display:flex; 
+  align-items:center; 
+  justify-content:center; 
+  gap:2.5rem;
+}
+
+li{ list-style:none; }
+
+a{ 
+    text-decoration:none; 
+    color:whitesmoke; 
+}
+
+nav a:hover{
+  color: yellow;
+}
+
+.nav-izquierda{
+  padding-left:2rem; 
+  color: whitesmoke;
+  font-size:large; font-family:"Funnel Sans",sans-serif;
+}
+.nav-derecha{
+  padding-right:2rem; 
+  font-size:large; font-family:"Funnel Sans",sans-serif;
+}
+
+/*** MAIN ***/
+.title-main{ 
+    text-align:center; 
+    padding-top:2rem; 
+    font-family:"Funnel Sans",sans-serif; }
+.grid-pics{
+  display:grid; 
+  grid-template-columns:1fr 1fr 1fr; 
+  text-align:center; gap:1rem;
+  padding:2rem 5rem 0;
+}
+.pics{ width:100%; height:100%; }
+figure{ padding-bottom:2rem; font-family:"Funnel Sans",sans-serif; }
+
+/*** HAMBURGUESA ***/
+.menu-hamburguesa{
+  background:none; border:none; padding-right:2rem; cursor:pointer;
+}
+.menu-hamburguesa img{ display:block; width:28px; height:28px; }
+
+/*** PANEL DESPLEGABLE SUPERIOR ***/
+.menu-panel{
+  position:fixed; top:0; left:0; right:0;
+  background: purple;           
+  color:#fff;
+  transform: translateY(-100%); 
+  transition: transform .28s ease;
+  z-index: 999;
+  box-shadow: 0 8px 18px rgba(0,0,0,.25);
+  padding: 1rem 1.25rem 1.25rem;
+}
+.menu-panel.open{ transform: translateY(0); }
+
+.panel-close{
+  position:absolute; top:.6rem; right:.75rem;
+  background:none; border:none; color:#fff; font-size:1.5rem; cursor:pointer;
+}
+
+.panel-nav ul{
+  display:grid; gap:1.25rem; margin-top:.75rem;
+}
+.panel-nav a{
+  color:#fff; text-decoration:none; 
+  font-family:"Funnel Sans",sans-serif;
+  font-size: clamp(1.25rem, 4vw, 2rem);
+  display:inline-block;
+}
+
+
+/*** FOOTER ***/
+footer{
+    background-color: purple;
+    color:whitesmoke ;
+    font-family:"Funnel Sans",sans-serif;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    text-align: center;
+    margin-top: 3rem;
+}
+
+/*** RESPONSIVE ***/
+@media (max-width: 750px){
+  .nav-derecha{ display:none; }
+  .grid-pics{
+    grid-template-columns:1fr 1fr;
+    padding-left:2rem; padding-right:2rem;
+  }
+}
+
+@media (max-width: 600px){
+  .grid-pics{ grid-template-columns:1fr; padding-left:1rem; padding-right:1rem; }
+}
+
+@media (min-width: 751px){
+  .menu-hamburguesa{ display:none; }
+  /* Oculto el panel en desktop por las dudas */
+  .menu-panel{ display:none; }
+}

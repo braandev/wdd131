@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Temple Album</title>
+
+  <link rel="stylesheet" href="temples.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="cuerpo">
+
+  <header>
+    <nav class="nav-izquierda">
+      <h1>Temple Album</h1>
+    </nav>
+
+    <nav class="nav-derecha">
+      <ul>
+        <li><a href="">Home</a></li>
+        <li><a href="">Old</a></li>
+        <li><a href="">New</a></li>
+        <li><a href="">Large</a></li>
+        <li><a href="">Small</a></li>
+      </ul>
+    </nav>
+
+    <!-- Hamburguesa (solo mobile) -->
+    <button class="menu-hamburguesa" aria-label="Abrir menú" aria-controls="menu-panel" aria-expanded="false">
+      <img src="images/menu.png" alt="Menú">
+    </button>
+  </header>
+
+  <!-- Panel desplegable superior (full width, alto según contenido) -->
+  <div id="menu-panel" class="menu-panel" hidden>
+    <button class="panel-close" aria-label="Cerrar menú">✕</button>
+    <nav class="panel-nav">
+      <ul>
+        <li><a href="">Home</a></li>
+        <li><a href="">Old</a></li>
+        <li><a href="">New</a></li>
+        <li><a href="">Large</a></li>
+        <li><a href="">Small</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <main>
+    <div class="title-main">
+      <h1>Home</h1>
+    </div>
+
+    <div class="grid-pics">
+      <figure>
+        <img class="pics" src="images/templos.jpg" alt="">
+        <figcaption>San Diego California</figcaption>
+      </figure>
+      <figure>
+        <img class="pics" src="images/templos.jpg" alt="">
+        <figcaption>San Diego California</figcaption>
+      </figure>
+      <figure>
+        <img class="pics" src="images/templos.jpg" alt="">
+        <figcaption>San Diego California</figcaption>
+      </figure>
+      <figure>
+        <img class="pics" src="images/templos.jpg" alt="">
+        <figcaption>San Diego California</figcaption>
+      </figure>
+      <figure>
+        <img class="pics" src="images/templos.jpg" alt="">
+        <figcaption>San Diego California</figcaption>
+      </figure>
+      <figure>
+        <img class="pics" src="images/templos.jpg" alt="">
+        <figcaption>San Diego California</figcaption>
+      </figure>
+      <figure>
+        <img class="pics" src="images/templos.jpg" alt="">
+        <figcaption>San Diego California</figcaption>
+      </figure>
+      <figure>
+        <img class="pics" src="images/templos.jpg" alt="">
+        <figcaption>San Diego California</figcaption>
+      </figure>
+      <figure>
+        <img class="pics" src="images/templos.jpg" alt="">
+        <figcaption>San Diego California</figcaption>
+      </figure>
+    </div>
+  </main>
+
+  <footer>
+    <p>©<span id="currentyear"></span> Brandon Cazorla • Argentina</p>
+    <p id="lastModified"></p>
+  </footer>
+
+</div>
+<script defer src="temples.js"></script>
+</body>
+</html>
