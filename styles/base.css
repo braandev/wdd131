@@ -1,0 +1,177 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100dvh ;
+    
+}
+
+
+/*#######   HEADER  ##########*/
+
+.title{
+    text-align: center;
+    background-color:  #1d4b73 ;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    color: whitesmoke;
+    font-family: "Oxygen", sans-serif;
+
+}
+
+
+.nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color:  #34322f ;
+    padding-top: 1rem;
+    padding-bottom: 1rem ;
+}
+
+.nav a{
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-family: "Oxygen", sans-serif;
+
+}
+
+.nav a:hover{
+    color: yellow;
+}
+
+/*#######   MAIN  ##########*/
+  
+main h2{
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 3rem;
+    font-family: "Oxygen", sans-serif;
+
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    margin-left: 4rem;
+    margin-right: 4rem;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    
+}
+
+/*#######   MY SELF  ##########*/
+section{
+    border: solid 1.5px grey;
+    border-radius: 1rem 1rem 1rem 1rem;
+    padding-bottom: 1rem;
+}
+
+.myself-title{
+    text-align: center;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    background-color: #1d4b73;
+    color: whitesmoke;
+    border-radius: 1rem 1rem 0rem 0rem;
+    font-family: "Oxygen", sans-serif;
+
+}
+
+.myself{
+    display: flex;
+    gap: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    padding-top: 2rem;
+    font-family: "Funnel Sans", sans-serif;
+}
+
+.myself img{
+    height: auto;
+    width: 120px;
+    transform: translateY(-1rem);
+}
+
+/*#######   FLAG  ##########*/
+.title-flag{
+    text-align: center;
+    margin-left: 15rem;
+    margin-right: 25rem;
+    transform: translateY(-3rem);
+    font-size: 1.5rem;
+    font-family: "Funnel Sans", sans-serif;
+}
+
+.flag{
+    text-align: center;
+    transform: translateY(-1rem);
+}
+
+.flag-section{
+    display: flex;
+    gap: 1rem;
+    margin-left: 1rem;
+    margin-right: 10rem;
+    font-family: "Funnel Sans", sans-serif;
+}
+
+.flag img{
+    width: auto;
+    height: 100px;
+    margin-bottom: 1rem;
+}
+
+
+/*#######   ASIDE  ##########*/
+aside{
+   
+    border-radius: 1rem 1rem 1rem 1rem;
+    border: solid 1.5px grey;
+    
+}
+
+aside h3{
+    text-align: center;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    border-radius: 1rem 1rem 0rem 0rem;
+    background-color: #1d4b73;
+    color: whitesmoke;
+    font-family: "Oxygen", sans-serif;
+
+}
+
+.list {
+    margin-top: 20%;
+    margin-left: 4rem;
+    font-family: "Funnel Sans", sans-serif;
+}
+
+.list li {
+    margin-bottom: 0.5rem;
+}
+
+/*#######   FOOTER  ##########*/
+footer{
+    text-align: center;
+    background-color: #1d4b73;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    font-family: "Oxygen", sans-serif;
+}
+
+footer span{
+    color: whitesmoke;
+}
+
+footer p{
+    color: yellow;
+    padding-top: 1rem;
+}
