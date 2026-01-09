@@ -1,36 +1,42 @@
 *{
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
 body{
     display: grid;
     grid-template-rows: auto 1fr auto;
-    min-height: 100dvh ;
-    
+    min-height: 100dvh;
 }
 
+header{
+    display: block;
+}
+
+main{
+    display: block;
+}
 
 /*#######   HEADER  ##########*/
 
 .title{
     text-align: center;
-    background-color:  #1d4b73 ;
+    background-color: #1d4b73;
     padding-top: 1rem;
     padding-bottom: 1rem;
     color: whitesmoke;
     font-family: "Oxygen", sans-serif;
-
 }
-
 
 .nav{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color:  #34322f ;
     padding-top: 1rem;
-    padding-bottom: 1rem ;
+    padding-bottom: 1rem;
+    color: whitesmoke;       
+    background-color: #34322f;
 }
 
 .nav a{
@@ -38,7 +44,6 @@ body{
     text-decoration: none;
     font-size: 1.5rem;
     font-family: "Oxygen", sans-serif;
-
 }
 
 .nav a:hover{
@@ -46,14 +51,13 @@ body{
 }
 
 /*#######   MAIN  ##########*/
-  
+
 main h2{
     text-align: center;
     margin-top: 1rem;
     margin-bottom: 1rem;
     font-size: 3rem;
     font-family: "Oxygen", sans-serif;
-
 }
 
 .grid{
@@ -63,16 +67,27 @@ main h2{
     margin-right: 4rem;
     gap: 1rem;
     margin-bottom: 2rem;
-    
+}
+
+/*#######   CARDS (SECTIONS)  ##########*/
+.card{
+    border: solid 1.5px grey;
+    border-radius: 1rem;
+    padding-bottom: 1rem;
+    overflow: hidden; /* asegura bordes redondeados con headers */
+}
+
+/* Header de la 2da card (Web Dev Resources) */
+.card > h3{
+    text-align: center;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    background-color: #1d4b73;
+    color: whitesmoke;
+    font-family: "Oxygen", sans-serif;
 }
 
 /*#######   MY SELF  ##########*/
-section{
-    border: solid 1.5px grey;
-    border-radius: 1rem 1rem 1rem 1rem;
-    padding-bottom: 1rem;
-}
-
 .myself-title{
     text-align: center;
     padding-bottom: 1rem;
@@ -81,7 +96,6 @@ section{
     color: whitesmoke;
     border-radius: 1rem 1rem 0rem 0rem;
     font-family: "Oxygen", sans-serif;
-
 }
 
 .myself{
@@ -128,33 +142,15 @@ section{
     margin-bottom: 1rem;
 }
 
-
-/*#######   ASIDE  ##########*/
-aside{
-   
-    border-radius: 1rem 1rem 1rem 1rem;
-    border: solid 1.5px grey;
-    
-}
-
-aside h3{
-    text-align: center;
-    padding-bottom: 1rem;
-    padding-top: 1rem;
-    border-radius: 1rem 1rem 0rem 0rem;
-    background-color: #1d4b73;
-    color: whitesmoke;
-    font-family: "Oxygen", sans-serif;
-
-}
-
-.list {
-    margin-top: 20%;
-    margin-left: 4rem;
+/*#######   RESOURCES LIST  ##########*/
+.list{
+    margin-top: 2rem;
+    margin-left: 2rem;
+    padding-left: 1.2rem;
     font-family: "Funnel Sans", sans-serif;
 }
 
-.list li {
+.list li{
     margin-bottom: 0.5rem;
 }
 
@@ -167,11 +163,14 @@ footer{
     font-family: "Oxygen", sans-serif;
 }
 
-footer span{
+/* Primer <p> (contiene el <span>) */
+footer p:first-child{
     color: whitesmoke;
+    padding-top: 0;
 }
 
-footer p{
+/* Segundo <p> (last modified) */
+footer p:last-child{
     color: yellow;
     padding-top: 1rem;
 }
