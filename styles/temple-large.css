@@ -1,0 +1,111 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100dvh;
+}
+
+#open-menu{
+    display: none;
+}
+
+#close-menu{
+    display: none;
+}
+
+
+
+/*********  HEADER  **********/
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #3d185f;
+    padding-top: 1rem;
+    padding-bottom:1rem ;
+}
+
+header .headername{
+    padding-left: 2rem;
+    font-size: 2rem;
+    color: whitesmoke;
+    font-family: "Zalando Sans SemiExpanded", sans-serif;
+    font-weight: 500;
+}
+
+header .nav{
+    margin-right: 2rem;
+}
+
+header .nav a{
+    text-decoration: none;
+    color: whitesmoke;
+    margin-left: 3rem;
+    font-size: 1.3rem;
+    font-family: "Zalando Sans SemiExpanded", sans-serif;
+    font-weight: 500;
+}
+
+header .nav a:hover{
+    color: yellow;
+}
+
+/*********  MAIN  **********/
+main{ 
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+
+main h1{
+    text-align: center;
+    margin-top: 1.5rem;
+    font-family: "Oxygen", sans-serif;
+    font-weight: 600;
+}
+
+main section{
+    margin-right: 10%;
+    margin-left: 10%;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+main section .grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 1rem;
+}
+
+main section figure{
+    text-align: center;   
+}
+
+main section figure img{
+    height: 90%;
+    width: 100%;
+}
+
+main section figure figcaption{
+    font-size: 0.9rem;
+    font-family: "Oxygen", sans-serif;
+    font-weight: 400;
+}
+
+/*********  FOOTER  **********/
+
+footer{
+    text-align: center;
+    background-color: #3d185f;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    color: whitesmoke;
+    font-family: "Zalando Sans SemiExpanded", sans-serif;
+    font-weight: 300;
+}
+
