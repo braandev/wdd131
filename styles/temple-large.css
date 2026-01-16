@@ -9,6 +9,12 @@ body{
     min-height: 100dvh;
 }
 
+#open-menu,
+#close-menu {
+  color: whitesmoke;
+}
+
+
 #open-menu{
     display: none;
 }
