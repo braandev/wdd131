@@ -1,0 +1,133 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+main{
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    height: 100dvh;
+}
+
+.hero-mobile{
+    display: none;
+}
+
+:root {
+  --main-color: #e03034;
+  --secondary-color: #147b4d;
+  --bg-color: #f5f5f5;
+  --font-main: "Arial", sans-serif;
+}
+
+.weather-title::after {
+    content: " ⛅";
+    margin-left: 0.5rem;
+    
+  }
+
+
+/*********  HEADER  **********/
+
+header{
+    text-align: center;
+    color: whitesmoke;
+    background-color: var(--main-color);
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    font-family: "Funnel Sans", sans-serif;
+}
+
+.line-green{
+    padding-bottom: 1.5rem;
+    background-color: var(--secondary-color) ;
+}
+
+/*********  MAIN  **********/
+.img{
+    display: none;
+}
+
+.hero{
+    height: 100vh;
+    background-image: url("/wdd131/images/lemurs.jpg");
+}
+
+.hero-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+/*********  DATA CONTENT  **********/
+
+
+.data-content{
+    margin-left: 3rem;
+    margin-top: 4rem;
+    background-color: whitesmoke;
+    opacity: 75%;
+    padding-top: 0.5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 1rem;
+    margin-right: 25rem;
+    margin-bottom: 13rem
+}
+
+.title-data{
+    margin-bottom: 1rem;
+    background-color: var(--secondary-color);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1.5rem;
+    transform: translateX(-14%);
+    margin-right: -3rem;
+    color: whitesmoke;
+    font-family: "Funnel Sans", sans-serif;
+}
+
+.data-information p{
+    margin-bottom: 0.6rem;
+    font-family: "Oxygen", sans-serif;
+}
+
+/*********  WETHER CONTENT  **********/
+
+
+.weather-content{
+    background-color: whitesmoke;
+    margin-top: 50%;
+    margin-left: 29rem;
+    margin-right: 3rem;
+    padding-left: 2rem;
+    padding-top: 0.5rem;
+    padding-bottom: 2rem;
+}
+
+.title-weather{
+    background-color: var(--secondary-color);
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    padding-left: 1.5rem;
+    transform: translateX(-19%);
+    margin-bottom: 1rem;
+    color: whitesmoke;
+    font-family: "Funnel Sans", sans-serif;
+}
+
+.weather-information p{
+    margin-bottom: 0.6rem;
+    font-family: "Oxygen", sans-serif;
+}
+
+
+/*********  FOOTER  **********/
+footer{
+    background-color:   var(--main-color) ;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    text-align: center;
+    color: whitesmoke;
+    font-family: "Funnel Sans", sans-serif;
+}
