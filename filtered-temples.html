@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Filtered Temples</title>
+  <meta name="author" content="Brandon Cazorla">
+
+  <link rel="stylesheet" href="styles/filtered-temples.css">
+  <link rel="stylesheet" href="styles/filtered-temple-large.css">
+  <script defer src="scripts/filtered-temples.js"></script>
+</head>
+
+<body>
+<header>
+  <p class="headername">Temple Album</p>
+
+  <button id="open-menu">☰</button>
+
+  <nav id="mobile-nav"  class="nav">
+
+    <button  id="close-menu">✕</button>
+
+    <a href="#" id="home">Home</a>
+    <a href="#" id="old">Old</a>
+    <a href="#" id="new">New</a>
+    <a href="#" id="large">Large</a>
+    <a href="#" id="small">Small</a>
+  </nav>
+</header>
+
+<main>
+  <h1>Temples</h1>
+  <section id="temples-container" class="temple-grid"></section>
+</main>
+
+<footer>
+  <p id="currentyear"></p>
+  <p id="lastModified"></p>
+</footer>
+</body>
+</html>

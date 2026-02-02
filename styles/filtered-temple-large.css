@@ -1,0 +1,126 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100dvh;
+}
+
+#open-menu,
+#close-menu {
+  color: whitesmoke;
+}
+
+
+
+
+
+/*********  HEADER  **********/
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #3d185f;
+    padding-top: 1rem;
+    padding-bottom:1rem ;
+    color: whitesmoke;
+}
+
+header .headername{
+    padding-left: 2rem;
+    font-size: 2rem;
+    color: whitesmoke;
+    font-family: "Zalando Sans SemiExpanded", sans-serif;
+    font-weight: 500;
+}
+
+header .nav{
+    margin-right: 2rem;
+}
+
+header .nav a{
+    text-decoration: none;
+    color: whitesmoke;
+    margin-left: 3rem;
+    font-size: 1.3rem;
+    font-family: "Zalando Sans SemiExpanded", sans-serif;
+    font-weight: 500;
+}
+
+header .nav a:hover{
+    color: yellow;
+}
+
+/*********  MAIN  **********/
+main{ 
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+main h1{
+    text-align: center;
+    margin-top: 1.5rem;
+    font-family: "Oxygen", sans-serif;
+    font-weight: 600;
+}
+strong{
+    font-size: 0.8rem;
+}
+.temple-card p{
+    font-size: 0.8rem;
+    color: black;
+}
+
+.temple-card h2{
+    font-size: 1.2rem;
+}
+
+/********* grid  **********/
+
+.temple-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 1.5rem;
+  margin: 2rem;
+}
+
+
+.temple-card {
+  background-color: #f3f3f3;
+  border-radius: 6px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+  text-align: center;
+  padding: 1rem;
+}
+
+.temple-card h2 {
+  font-family: "Oxygen", sans-serif;
+  margin-bottom: 0.5rem;
+}
+
+.temple-card strong {
+  color: purple;
+  font-family: "Oxygen", sans-serif;
+  margin: 0.2rem 0;
+}
+
+.temple-card img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 10;
+  display: block;
+}
+
+/*********  FOOTER  **********/
+footer{
+    text-align: center;
+    background-color: #3d185f;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    color: whitesmoke;
+    font-family: "Zalando Sans SemiExpanded", sans-serif;
+    font-weight: 300;
+}
