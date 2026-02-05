@@ -120,12 +120,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
   displayTemples(temples);
 
-  // ===== FILTER BUTTONS =====
+  // THE HAMBURGER MENU
   function setupFilter(id, filterFn) {
     const btn = document.getElementById(id);
     if (!btn) return;
 
-    btn.addEventListener("click", (e) => {
+    btn.addEventListener("click", (e) => {     // PUTO EL QUE LEE
       e.preventDefault();
       displayTemples(filterFn());
     });
