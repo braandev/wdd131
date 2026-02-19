@@ -8,50 +8,113 @@
     <meta name="author" content="Brandon Cazorla">
     <meta name="description" content="Site planning document for Spartacus Gym, a fitness website focused on health, sports, and gym facilities.">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="siteplan.css">
+    
+
+    <script src="siteplan.js" defer></script>
 </head>
 
 <body>
-
-    <!--- 1. Site name -->
-    <h2>Spartacus Gym</h2>
-    <p>My Website name will call "Spartacus Gym", in honor to Magnus Scheving (actor in Lazy Town), this website showed everything about the gym, like the crew, the place, about us and between others</p>
-
-    <!--- 2. Site Purpose -->
-    <h2>To people what look be more healthy and practice any sport</h2>
-    <p>The purpose of the Website is to find information about the gym, from us machines until are sports and spaces</p>
-    
-    <!--- 3. Scenarios -->
-    <h2>Scenarios</h2>
-
-    <ul>
-        <li>Do you have personal trainers?</li>
-        <li>what kind of sports do you offer?</li>
-        <li>do you have parking?</li>
-    </ul>
-
-    <!--- 4. Schema colors -->
-    <h2>Schema colors</h2>
-    <p>Primary color: (#1e90ff) for headers and footers</p>
-    <p>Secondary color: (#ffffff) for backgrounds</p>
-
-    <!--- 5. Typography -->
-    <h2>Typography</h2>
-    <p>Main font: Funnel Sans"</p>
-
-    <!--- 6. Wireframes -->
-    
-    <h2>Wireframes</h2>
-    <div class="wireframes">
-        <div class="wire">
-            <p>Wireframe for WEB</p>
-            <img src="wireframe-web.png" alt="This is the wireframe for web">
+    <header>
+        <div class="logo-container">
+            <a href="siteplan.html">
+                <img class="logo" src="../images/logo-gym.jpg" alt="Logo Spartacus">
+                <p>Spartacus</p>
+            </a>
         </div>
-        <div class="wire">
-            <p>Wireframe for MOBILE</p>
-            <img src="wireframe-mobile.png" alt="This is the wireframe for mobile">
-        </div>
-    </div>
+
+        <button id="open-menu">☰</button>
+
+        <nav id="mobile-nav" class="nav">
+
+
+            <button id="close-menu">✕</button>
+            <a href="siteplan.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main id="main">
+
+        <section class="hero-container">
+            <div class="hero">
+                <img src="../images/personal-trainer.webp" alt="Picture personal trainer" loading="lazy" width="400" height="400">
+            </div>
+
+            <div class="hero-info">
+                <span>Your best self with</span>
+                <h1>Spartacus Gym</h1>
+                <p>Start hiiting your goals today!</p>
+                <a  href="#formulario">Get Started</a>
+            </div>
+        </section>
+
+        <section class="goals">
+            <span>Reserve your place</span>
+            <p>Find your ideal session and start<br>healing your body and mind
+            </p>
+        </section>
+
+        <section class="cards-container">
+            <div class="mussel">
+                <img src="../images/mancuerna.png" alt="">
+                <h2>Gains Mussel</h2>
+                <p>Focused approach with<br>guide your toward greater <br>muscle gain & enhanced<br> endurance</p>
+            </div>
+
+            <div class="weight">
+                <img src="../images/escala.png" alt="">
+                <h2>Lose Weight</h2>
+                <p>Our approach to fat less<br>goes beyond simply <br>shedding pounds, it's doubt<br> a mindset of empowerment</p>
+            </div>
+
+            <div class="nutrition">
+                <img src="../images/manzana-dorada.png" alt="">
+                <h2>Nutrition</h2>
+                <p>We'll empower you with<br>balanced meals, healthy <br>snacks & smart eating<br>strategies</p>
+            </div>
+        </section>
+
+        <section id="formulario" class="form-container">
+            <h2>Suscribe to Spartacus Gym!</h2>
+            <form method="get">
+                <!--    NOMBRE  -->
+                <label for="name">Name:</label>
+                <input id="name" class="name-input" type="text" required>
+
+                <!--    EMAIL  -->
+                <label for="email">Email:</label>
+                <input id="email" class="email-input" type="email" required>
+
+                <!--    SUSCRIPTION  -->
+                <label for="option">Subscription:</label>
+                <select id="option" class="option-input" required>
+                <option value="" disabled selected>Select a subscription...</option>
+                </select>
+
+                    
+
+                <!--    NEWSLATTER  -->
+                <label class="check-label">
+                    <input type="checkbox" id="newslatter">
+                    I want to receive updates
+                </label>
+
+                <button class="suscribe" type="submit">Suscribe</button>
+            </form>
+        </section>
+    </main>
+
+
+    <footer>
+        <p id="year"></p>
+        <span id="lastmodified"></span>
+    </footer>
 
 </body>
 </html>

@@ -1,0 +1,218 @@
+@media (max-width: 815px) {
+
+        #open-menu {
+        font-size: 24px;
+        cursor: pointer;
+        margin-right: 2rem;
+        border: none;
+        background: none;
+        color: black;
+        font-size: 2rem;
+        display: block;
+    }
+
+    #mobile-nav{
+        position: fixed;
+        top: 0;
+        left: 0;
+        padding-top: 2rem;
+        width: 100%;
+        background: whitesmoke;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+        padding-bottom: 1rem;
+        color: black;
+
+        transform: translateY(-100%);
+        z-index: 800;
+    }
+
+    #close-menu{
+        position: absolute;
+        top: 20px;
+        right: 35px;
+        font-size: 28px;
+        background: none;
+        border: none;
+        color: black;
+        display: block;
+    
+    }
+    #mobile-nav.active{
+        transform: translateY(0);
+    }
+
+    #mobile-nav.active main{
+        margin-top: 2rem;
+    }
+
+    .nav a{
+        text-decoration: none;
+        color: black;
+    }
+
+    .nav a:hover{
+        text-decoration: none;
+        color: var(--color--secondary);
+    }
+
+    .hero-container{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        margin-left: none;
+        gap: 2rem;
+        
+        
+    }
+
+        .hero-container .hero img{
+            border-radius: 0;
+            
+        }
+
+
+        .hero-container .hero-info{
+            text-align: center;
+            gap: 1rem;
+    
+        }
+
+        .hero-container .hero-info h1{
+            font-size: 1.8rem;
+        }
+        .hero-container .hero-info span{
+            font-size: 1rem;
+        }
+
+        .hero-container .hero-info p{
+            font-size: 1rem;
+        }
+
+        .hero-container .hero-info a{
+            font-size: 1rem;
+            padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+            color: black;
+            background-color: var(--color--secondary);
+        }
+
+        .hero-container .hero-info a:hover{
+            font-size: 1rem;
+            padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+            background-color: black;
+        }
+    
+    /**** CARDS ****/
+    .goals p{
+        font-size: 1.2rem;
+    }
+
+    .cards-container{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+    /**** FORM ****/
+    .form-container{
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+
+    /**** FOOTER ****/
+    footer{
+        font-size: 0.8rem;
+    }
+
+
+    /*$$$$$$$$$$ CONTACT PAGE $$$$$$$$*/
+    
+    .title-contact h2{
+        font-size: 1.5rem;
+    }
+
+    .title-contact p{
+        font-size: 0.8rem;
+    }
+
+    .contact-cards{
+        display: flex;
+        flex-direction: column;
+    }
+    .contact-cards div{
+        height: 30%;
+    }
+
+        .contact-cards div img{
+            height: 30px;
+            width: auto;
+        }
+
+        .contact-cards div h3{
+            font-size: 1.5rem;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+
+        .contact-cards div p{
+            font-size: 0.6rem;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .contact-cards div a{
+            font-size: 0.7rem;
+        }
+
+        .contact-cards .border{
+            border-right: none;
+            border-bottom: 2px solid grey;
+        }
+
+
+        /*$$$$$$$$$$ SERVICES PAGE $$$$$$$$*/
+
+        .grid{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+            gap: 2rem;
+        }
+
+        .grid img{
+            height: 160px;
+            width: 250px;
+        }
+}
+
+@media (max-width: 620px) {
+    .logo-container a img{
+        height: 80px;
+        width: auto;
+    }
+    .logo-container a p{
+        font-size: 1.5rem;
+    }
+
+    .nav{
+        display: none;
+    }
+}
+
+@media (max-width: 556px) {
+
+    .services p{
+        font-size: 1.2rem;
+    }
+
+    .grid{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(8,1fr);
+    }
+
+}
